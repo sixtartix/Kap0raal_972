@@ -1,0 +1,155 @@
+/* Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navigation */
+header nav {
+  background-color: #1a1a1a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff007f;
+}
+
+/* Section hero */
+.hero {
+  background: linear-gradient(135deg, #ff007f, #6a00ff);
+  padding: 100px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero .cta {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #ff007f;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .cta:hover {
+  background-color: #ff007f;
+  color: #ffffff;
+}
+
+/* Profil Image */
+.hero-image, .profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff007f;
+}
+
+.about, .games, .setup, .social {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Réseaux sociaux icônes */
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 32px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff007f;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* Effets d'animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
